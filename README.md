@@ -10,4 +10,6 @@ You must install the RSAT Active Directory Module for Windows Powershell from Se
 Typically you would schedule this to run as a periodic task on your DEM manager server.
 
 Suggested command line for scheduled task:
+```
 powershell.exe -ExecutionPolicy Unrestricted -command "E:\DEMCleanup\DEMcleanup.ps1"
+```
