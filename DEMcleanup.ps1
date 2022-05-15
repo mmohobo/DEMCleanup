@@ -5,7 +5,7 @@
 # Typically you would schedule this to run as a periodic task on your DEM manager server.
 # powershell.exe -ExecutionPolicy Unrestricted -command "E:\DEMCleanup\DEMcleanup.ps1"
 
-# Written by Rick Redfern, last updated 28 Apr 2022
+# Written by Rick R, last updated 28 Apr 2022
 
 # Modify these properties for your environment
 $demProfilePath = "E:\DEMprofiles"				# Your default DEM profile directory
