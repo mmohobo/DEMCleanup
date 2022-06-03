@@ -88,7 +88,7 @@ Log "$($lul.count) user objects in $adName"
 # Iterate the profile array and move any profiles that do not have a corresponding AD user object
 $dpl | ForEach-Object {
     if (!$lul.Contains($_)) {
-        Move-Item -Path "$demCleanupPath\$_" -Destination $demArchivePath
+        Move-Item -Path "$demProfilePath\$_" -Destination $demArchivePath
         # Change the last modified date of the archived folder so we know when it got moved
         (Get-Item "$demArchivePath\$_").LastWriteTime = (Get-Date)
         Log "$($_) archived"
